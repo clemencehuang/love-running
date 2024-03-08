@@ -7,6 +7,18 @@
     i.e. when applying height and width to an element later, it will be applied to an entire elements including the border */
  }
 
+ /* General styles */
+ body {
+    min-height: 100vh; 
+    /* 100vh represents the full height of the viewport,
+    regardless of the content on the page. When you use 100vh for an element's height, it will take up the entire vertical height of the user' s screen,
+    and it won't be affected by the content or other elements on the page. 100% is a relative unit of measurement. */
+    display: flex;
+    flex-direction: column;
+    /* General project styles */
+    color: #3a3a3a;
+ }
+
 /* Header */
 header {
     background-color: lightcoral;
@@ -15,6 +27,8 @@ header {
 /* Main content */
 main {
     background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
 }
 
 /* Footer */
