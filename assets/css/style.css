@@ -25,11 +25,39 @@
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff; 
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99; /* high value to cover ourselves in case there are many other layers later */
+    width: 100%; /* to fill full width of screen */
+    box-shadow: 0 2px 2px #3a3a3a; /* creates drop shadow */
+}
+
+/* style rule for any a tag that is a descendant of the header */
+header a {
+    text-decoration: none;
+    color: inherit; /* from body */
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* Main content */
