@@ -37,19 +37,59 @@
         <a href="index.html">
             <h1 id="logo">Love Running</h1>
         </a>
+        <!-- Usually done in Javascript but this is a way to do it in html: create a toggle. Will replace X with image later via Font Awesom burger link <i class="fa-solid fa-bars"></i> -->
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Sign Up</a></li>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Semantic element: section -->
-    <main>Main Content</main>
+    <main>
+        <section id="hero">
+            <div id="cover-text">
+                <h2>Love Running</h2>
+                <h3>Dublin Docklands and Phoenix Park</h3>
+            </div>
+        </section>
+    </main>
 
     <!-- Semantic element: footer -->
-    <footer>Footer</footer>
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)">
+                <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)">
+                <i class="fa-brands fa-twitter-square"></i>
+                </a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                aria-label="Visit our YouTube page (opens in a new tab)">
+                <i class="fa-brands fa-youtube-square"></i>
+                </a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Font Awesome kit. Good practice to place javascript scripts at the bottom to speed up loading. This way browser will focus on loading the rest of the website elements first before the javascript files -->
+    <script src="https://kit.fontawesome.com/2d20e08740.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
